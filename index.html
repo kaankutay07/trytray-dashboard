@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-driven Design - Ultimate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- Card 1: Vertical Bar -->
+        <div class="card card-1" data-target="modal-1">
+            <div class="card-header">
+                <div class="header-left">
+                    <p class="title">Vertical bar</p>
+                    <p class="subtitle">Statistics of the month</p>
+                </div>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-vertical-bar.svg" alt="Vertical Bar Chart">
+            </div>
+            <div class="card-footer legends">
+                <div class="legend-item"><span class="legend-color" style="background-color: #0077b6;"></span>Data one</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #00b4d8;"></span>Data two</div>
+            </div>
+        </div>
+
+        <!-- Card 2: Horizontal Bar -->
+        <div class="card card-2" data-target="modal-2">
+            <div class="card-header">
+                <div class="header-left">
+                    <p class="title large-title">854</p>
+                    <div class="stadistic">
+                        <img src="assets/icon-arrow-up.svg" class="icon-small" alt="Up Arrow">
+                        <p class="subtitle" style="color: #0A9396;">25 upward</p>
+                    </div>
+                </div>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-horizontal-bar.svg" alt="Horizontal Bar Chart">
+            </div>
+            <div class="card-footer">
+                <p class="title small-title">Vertical bar</p>
+                <p class="subtitle">Minim dolor in amet nulla laboris enim...</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Line Dots -->
+        <div class="card card-3" data-target="modal-3">
+            <div class="card-header">
+                <p class="title">Atmosphere Temperature by Altitude</p>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-line-dots.svg" alt="Atmosphere Chart Line">
+            </div>
+        </div>
+
+        <!-- Card 4: Area Range -->
+        <div class="card card-4" data-target="modal-4">
+            <div class="card-header">
+                <div class="header-left-icon">
+                    <img src="assets/icon-temp.svg" class="icon" alt="Temperature Icon">
+                    <p class="title">Temperatures</p>
+                </div>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-area-range.svg" alt="Area Range Chart">
+            </div>
+             <div class="card-footer">
+                <p class="title small-title">Area range and line</p>
+                <p class="subtitle">Minim dolor in amet nulla laboris enim...</p>
+            </div>
+        </div>
+
+        <!-- Card 5: Donut Chart -->
+        <div class="card card-5" data-target="modal-5">
+            <div class="card-header">
+                <p class="title">Storage</p>
+                <img src="assets/icon-cog.svg" class="icon" alt="Settings">
+            </div>
+            <div class="card-body chart-donut">
+                <img src="assets/chart-donut.svg" alt="Donut Chart">
+                <div class="storage-info">
+                    <p class="storage-value">77%</p>
+                </div>
+            </div>
+            <div class="card-footer legends-column">
+                <div class="legend-item"><span class="legend-color" style="background-color: #3a0ca3;"></span>Documents</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #b5179e;"></span>Videos</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #f72585;"></span>Photos</div>
+            </div>
+        </div>
+
+        <!-- Card 6: Contribution -->
+        <div class="card card-6" data-target="modal-6">
+             <div class="card-header">
+                <p class="title">Contributions</p>
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-contribution.svg" alt="Contributions Chart">
+            </div>
+             <div class="card-footer">
+                <button class="btn" id="show-more-activity-btn">Show more activity</button>
+            </div>
+        </div>
+
+        <!-- Card 7: Profile -->
+        <div class="card card-7" data-target="modal-7">
+            <div class="card-header">
+                <p class="title">Personal Diagnostics</p>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body-profile">
+                <img class="profile-avatar" src="assets/avatar-marvin.png" alt="Marvin McKinney">
+                <p class="profile-name">Marvin McKinney</p>
+                <p class="profile-title">Scrum Master</p>
+            </div>
+        </div>
+
+        <!-- Card 8: World Population -->
+        <div class="card card-8" data-target="modal-8">
+            <div class="card-header">
+                <p class="title">Historic World Population</p>
+                <img src="assets/icon-menu.svg" class="icon" alt="Menu">
+            </div>
+            <div class="card-body">
+                <img src="assets/chart-world-population.svg" alt="World Population Chart">
+            </div>
+             <div class="card-footer legends">
+                <div class="legend-item"><span class="legend-color" style="background-color: #023e8a;"></span>2010</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #48cae4;"></span>2011</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #ade8f4;"></span>2012</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Vertical Bar Chart Details</h2>
+            <p>This is a more detailed view of the vertical bar chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-vertical-bar.svg" alt="Vertical Bar Chart">
+        </div>
+    </div>
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Horizontal Bar Chart Details</h2>
+            <p>This is a more detailed view of the horizontal bar chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-horizontal-bar.svg" alt="Horizontal Bar Chart">
+        </div>
+    </div>
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Atmosphere Temperature Details</h2>
+            <p>This is a more detailed view of the atmosphere temperature chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-line-dots.svg" alt="Atmosphere Chart Line">
+        </div>
+    </div>
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Temperatures Details</h2>
+            <p>This is a more detailed view of the temperatures chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-area-range.svg" alt="Area Range Chart">
+        </div>
+    </div>
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Storage Details</h2>
+            <p>This is a more detailed view of the storage chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-donut.svg" alt="Donut Chart">
+        </div>
+    </div>
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="activity-content">
+                <h2>Contributions Details</h2>
+                <p>This is a more detailed view of the contributions chart. Here we could show more data, filters, or explanations.</p>
+                <img src="assets/chart-contribution.svg" alt="Contributions Chart">
+            </div>
+        </div>
+    </div>
+    <div id="modal-7" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Personal Diagnostics Details</h2>
+            <p>This is a more detailed view of the personal diagnostics. Here we could show more data, filters, or explanations.</p>
+            <img class="profile-avatar" src="assets/avatar-marvin.png" alt="Marvin McKinney">
+        </div>
+    </div>
+    <div id="modal-8" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>World Population Details</h2>
+            <p>This is a more detailed view of the world population chart. Here we could show more data, filters, or explanations.</p>
+            <img src="assets/chart-world-population.svg" alt="World Population Chart">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
